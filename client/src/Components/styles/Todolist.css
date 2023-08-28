@@ -1,0 +1,78 @@
+
+.tasklist{
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    padding: 30px;
+    
+}
+
+.tasklist ul{
+    list-style: none;
+    width: 70%;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+}
+
+.tasklist ul li{
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    padding: 14px;
+    font-weight: bolder;
+    transition: .4s;
+    user-select: none;
+    
+}
+
+
+
+.tasklist ul li .isComplete{
+    visibility: visible;
+    color:green;
+    margin-right: 10px;
+}
+
+.tasklist ul li .checkicon{
+    visibility: hidden;
+    margin-right: 10px;
+}
+
+.tasklist ul li p.taskcomplete{
+text-decoration: line-through;
+}
+
+.tasklist ul li .edit , .tasklist ul li .close{
+    margin-left: 10px;
+}
+
+.tasklist ul li .edit:hover{
+    background-color: rgb(7,94,233);
+    border-radius: 3px;
+    color: #fff;
+}
+
+.tasklist ul li .close:hover{
+    background-color: rgb(253,92,92);
+    color: #fff;
+}
+
+
+.tasklist ul li:nth-child(odd):hover{
+    border-radius: 16px;
+    background-color: #f9f9f9;
+    cursor: pointer;
+}
+
+.tasklist ul li:nth-child(even):hover{
+    border-radius: 16px;
+    background-color: #ddd;
+    cursor: pointer;
+}
+
